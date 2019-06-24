@@ -13,6 +13,11 @@
     src: url(../fonts/signpainter-housescript.ttf);
 }
 
+@font-face{
+    font-family: 'Gotham';
+    src: url(../fonts/gotham.otf);
+}
+
 body, html{
     margin: 0;
     padding: 0;
@@ -43,9 +48,11 @@ body{
 }
 
 .menu-topo{
+    padding-left: 16%;
     width: 80%;
     margin: 0 auto;
     text-align: center;
+    font-family: Gotham;
 }
 
 .menu-topo ul{
@@ -59,22 +66,44 @@ body{
     display: inline-block;
     margin: 0;
     padding: 0;
-    width: 20%;
+    width: 18%;
     line-height: 25px;
 }
 
 .menu-topo li a{
     text-decoration: none;
-    text-transform: uppercase;
-    color: #7b84b6;
     line-height: 60px;
 }
 
 .menu-topo li a:hover{
     text-decoration: none;
-    text-transform: uppercase;
-    color: #7b84b6;
     line-height: 60px;
+}
+
+.color{
+    color: #7b84b6;
+    text-transform: uppercase;
+    font-size: 0.8em;
+}
+
+
+.rp a{
+    background-color: #dd111a;
+    box-shadow: 1px 2px 1px black;
+    color: white;
+    padding: 14px 17px;
+    border-radius: 7px;
+    white-space: nowrap;
+    font-weight: bold;
+}
+
+.rp a:hover{
+    background-color: #dd111a;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 7px;
+    white-space: nowrap;
+    font-weight: bold;
 }
 
 /* principal */
@@ -142,6 +171,8 @@ body{
 
 .conteudo-cf-2 span{
     color: #c05b83;
+    font-family: Gothan;
+    font-weight: bold;
 }
 
 .divisor{
@@ -152,7 +183,7 @@ body{
 
 .ganhador{
     width: 100%;
-    height: 195vh;
+    height: 180vh;
     position: relative;
     top: -140px;
     background-image: url(../images/s2-bg.PNG);
@@ -163,8 +194,8 @@ body{
 
 .ganhador h1{
     color: #4a59a1;
-    font-size: 3.5em;
-    margin-top: 595px;
+    font-size: 4.8em;
+    margin-top: 90vh;
     position: relative;
     float: left;
     left: 50%;
@@ -172,14 +203,42 @@ body{
     font-family: singpainter;
 }
 
+.voucher{
+    width: 40%;
+    margin: 0 auto;
+    margin-top: -70px;
+    background-image: url('../images/voucher-s2.png');
+    background-size: cover;
+    background-position: center;
+    height: 350px;
+}
 
 .t-v{
-    width: 600px;
+    width: 700px;
     padding: 0;
-    font-size: 18px;
-    display: inline-block;
-    margin: 1250px 0 0 0;
+    font-size: 20px;
+    position: relative;
+    float: right;
+    right: 50%;
+    transform: translateX(50%);
     text-align: center;
+    z-index: -11;
+}
+
+.rp2{
+    background-color: #dd111a;
+    box-shadow: 1px 2px 1px black;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 7px;
+    white-space: nowrap;
+    font-weight: bold;
+    text-decoration: none;
+    position: relative;
+    float: left;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 22vh;
 }
 
 /* responsivo */
