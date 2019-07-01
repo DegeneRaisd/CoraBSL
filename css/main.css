@@ -89,7 +89,7 @@ body{
 
 .rp a{
     background-color: #dd111a;
-    box-shadow: 1px 2px 1px black;
+    box-shadow: 0.3px 2px 1px black;
     color: white;
     padding: 14px 17px;
     border-radius: 7px;
@@ -99,11 +99,13 @@ body{
 
 .rp a:hover{
     background-color: #dd111a;
+    box-shadow: 0.3px 2px 1px black;
     color: white;
-    padding: 15px 20px;
+    padding: 14px 17px;
     border-radius: 7px;
     white-space: nowrap;
     font-weight: bold;
+    transition: 4s;
 }
 
 /* principal */
@@ -150,8 +152,12 @@ body{
 .conteudo-cf-1 span{
     color: #4a59a1;
     position: relative;
-    top: -30px;
+    top: -28px;
     z-index: 1;
+    font-family: Gotham;
+    font-weight: bold;
+    font-size: 32px;
+    left: -8.5%;
 }
 
 .conteudo-cf-2{
@@ -180,6 +186,11 @@ body{
 }
 
 /* sessao ganhador */
+
+.pog{
+    margin-top: 15vh;
+    display: none;
+}
 
 .ganhador{
     width: 100%;
@@ -227,19 +238,463 @@ body{
 
 .rp2{
     background-color: #dd111a;
-    box-shadow: 1px 2px 1px black;
+    box-shadow: 0.3px 2px 1px black;
     color: white;
-    padding: 15px 20px;
+    padding: 25px 30px;
     border-radius: 7px;
     white-space: nowrap;
+    font-size: 1.1em;
     font-weight: bold;
     text-decoration: none;
     position: relative;
     float: left;
     left: 50%;
     transform: translateX(-50%);
-    top: 22vh;
+    top: 20vh;
 }
 
+.reg{
+    width: 65%;
+    margin: -10vh auto;
+    text-align: center;
+}
+
+.reg h1{
+    font-family: Gotham;
+    font-size: 26px;
+    font-weight: bold;
+    color: #6b6b6b;
+}
+
+.reg p{
+    color: #898989;
+    font-size: 16px;
+    font-family: Gotham;
+    text-align: left;
+}
+
+.fm{
+    display: none;
+}
+
+.cad{
+    width: 80%;
+    background-color: #f5f5f5;
+    padding: 30px 80px;
+    text-align: center;
+    box-shadow: 5px 15px 20px #dadada, -5px 15px 20px #dadada;
+}
+
+.cad form{
+    width: 90%;
+    display: inline-block;
+}
+
+.cad input{
+    background-color: #fdfdfd;
+    font-size: 18px;
+    border-radius: 5px;
+    font-family: Gotham;
+    border: 0px;
+    display: inline-block;
+    padding: 1% 0 1% 4%;
+    margin: 2% 0;
+}
+
+.cad input:focus{
+    outline: none;
+}
+
+
+::placeholder { 
+  color: #c6c6c6;
+  opacity: 1; 
+}
+
+:-ms-input-placeholder { 
+  color: #c6c6c6;
+}
+
+::-ms-input-placeholder { 
+  color: #c6c6c6;
+}
+
+.name{
+    width: 96%;
+}
+
+.emp-l{
+    position: relative;
+    float: left;
+    margin-top: 0.5%;
+}
+
+.emp{
+    display: inline-block;
+    width: 61%;
+    border: 0px;
+    background-color: #fdfdfd;
+    font-size: 18px;
+    border-radius: 5px;
+    font-family: Gotham;
+    color: #cecece;
+    padding: 0.4% 0 0.4% 4%;
+    margin: 2% 0;
+}
+
+.uni{
+    width: 30%;
+    margin-top: -400px;
+    position: relative;
+    float: right;
+}
+
+input[type='radio']:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: #9b9b9b;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+}
+
+input[type='radio']:checked:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: white;
+    content: '';
+    display: inline-block;
+    box-sizing: border-box;
+    visibility: visible;
+    border: 5px solid #9b9b9b;
+}
+
+.temp{
+    color: #9b9b9b;
+    margin: 0 2%;
+}
+
+.email{
+    width: 96%;
+}
+
+.cpf{
+    position: relative;
+    float: left;
+    width: 45.7%;
+}
+
+.telefone{
+    position: relative;
+    float: right;
+    width: 45.7%;
+}
+
+input[type=submit]{
+    background-color: #73b87c;
+    color: #fdfdfd;
+    text-transform: uppercase;
+    text-align: center;
+    width: 100%;
+    font-weight: bold;
+    padding: 2%;
+    box-sizing: border-box;
+    margin-top: 4%;
+}
+
+.aceito{
+    margin-top: 1%;
+}
+
+input[type='checkbox']:after {
+    width: 20px;
+    height: 20px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: #53aa5e;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    box-sizing: border-box;
+    border-radius: 3px;
+    border: 1px solid rgba(0,0,0, 0.3);
+}
+
+input[type='checkbox']:checked:after {
+    width: 20px;
+    height: 20px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: #53aa5e;
+    content: "\2713";
+    color: white;
+    display: inline-block;
+    box-sizing: border-box;
+    visibility: visible;
+    text-align: center;
+    border-radius: 3px;
+}
+
+.aceito span{
+    font-family: Gotham;
+    font-size: 14px;
+    margin-left: 1%;
+    font-weight: bold;
+}
+
+.dr{
+    width: 35%;
+    display: inline-block;
+    margin-top: 3%;
+}
+
+.dr button{
+    background-color: #3172d4;
+    color: white;
+    padding: 15px 20px;
+    font-weight: bold;
+    font-size: 15px;
+    font-family: Gotham;
+    border: none;
+    border-radius: 4px;
+}
+
+footer{
+    text-align: center;
+    display: block;
+    margin-top: 20vh;
+    margin-bottom: 5vh; 
+}
+
+footer img{
+    width: 6%;
+}
+
+
 /* responsivo */
+
+@media screen and (max-width: 1040px){
+    .voucher{
+        width: 55%;
+        margin: 0 auto;
+        margin-top: -70px;
+        background-image: url('../images/voucher-s2.png');
+        background-size: 90%;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 350px;
+    }
+}
+
+
+@media screen and (max-width: 936px){
+    
+    .cf{
+        padding: 40px;
+        background-color: #ededed;
+        width: 75%;
+        height: auto;
+        position: relative;
+        float: left;
+        left: 50%;
+        top: 90vh;
+        transform: translateX(-50%);
+        }
+
+    .conteudo-cf-1{
+        display: inline-block;
+        text-align: center;
+        width: 100%;
+        font-size: 36px;
+        top: 10px;
+    }
+
+    .conteudo-cf-2{
+        position: relative;
+        float: left;
+        text-align: left;
+        width: 100%;
+        font-size: 22px;
+        margin-top: 2vh;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .pog{
+        display: block;
+    }
+
+    .ganhador h1{
+        font-size: 3.8em;
+    }
+
+    .voucher{
+        width: 50%;
+        background-size: 120%;
+    }
+
+    .t-v{
+        width: 90%;
+        font-size: 17px;
+    }
+
+    .rp2{
+        top: 10vh;
+    }
+
+    .reg{
+        width: 100%;
+        margin: -10vh auto;
+        text-align: center;
+    }
+
+    .reg h1{
+        font-family: Gotham;
+        font-size: 26px;
+        font-weight: bold;
+        color: #6b6b6b;
+        margin-top: -40px;
+        padding: 0;
+        display: inline-block;
+    }
+
+    .reg p{
+        width: 90%;
+        text-align: justify;
+        margin: 0 auto;
+    }
+
+    .fd{
+        display: none;
+    }
+
+    .fm{
+        display: block;
+    }
+
+    .fm-img{
+        width: 30%;
+        margin: 6vh 0;
+    }
+
+    .cad{
+        width: 100%;
+        background-color: #f5f5f5;
+        padding: 0px;
+        text-align: center;
+        box-shadow: 0;
+    }
+
+    .cad input{
+        background-color: #fdfdfd;
+        font-size: 18px;
+        border-radius: 15px;
+        font-family: Gotham;
+        border: 0px;
+        display: inline-block;
+        padding: 1% 0 1% 7%;
+        margin: 2% 0;
+    }
+
+    input[type=submit]{
+        background-color: #73b87c;
+        color: #fdfdfd;
+        text-transform: uppercase;
+        text-align: center;
+        width: 100%;
+        font-weight: bold;
+        padding: 2%;
+        box-sizing: border-box;
+        margin-top: 4%;
+    }
+
+    .name{
+        display: inline-block;
+        width: 90%;
+        height: 30px;
+    }
+
+    .empresa{
+        display: inline-block;
+        width: 90%;
+        height: 30px;
+    }
+
+    .uni{
+        display: inline-block;
+        width: 90%;
+        height: 30px;
+        margin: 0;
+        float: none;
+    }
+
+    .email{
+        display: inline-block;
+        width: 90%;
+        height: 30px;
+    }
+
+    .cpf{
+        display: inline-block;
+        width: 90%;
+        height: 30px;
+        float: none;
+    }
+
+    .telefone{
+        display: inline-block;
+        width: 90%;
+        height: 30px;
+        float: none;
+    }
+
+     .dr{
+        width: 45%;
+        margin: 0 auto;
+        margin-top: 3%;
+    }
+
+}
+
+@media screen and (max-width: 800px){
+    .dr{
+        width: 45%;
+        margin: 0 auto;
+        margin-top: 6%;
+    }
+
+    .dr button{
+        background-color: #3172d4;
+        color: white;
+        padding: 15px 20px;
+        font-weight: bold;
+        font-size: 15px;
+        font-family: Gotham;
+        border: none;
+        border-radius: 4px;
+    }
+
+    footer img{
+    width: 16%;
+    }
+
+}
+
+@media screen and (max-width: 607px){
+    .rp2{
+        top: 5vh;
+    }
+}
+
 
